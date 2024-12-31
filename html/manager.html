@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/manager.css">
+    <script defer src="../js/manager.js"></script>
+
+    <title>Root Point Login Page</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/assests/rootpoint.png" alt="the logo">
+                <!-- <h1>Root Point</h1> -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- action="/server" -->
+    <form  action="/server" method="post" autocomplete="on" onsubmit="return validateForm()" >
+
+        <!-- text input -->
+        <label>
+            Email:
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        </label>
+        
+        <label>
+            Password: 
+            <input type="password" id="password" name="password" required>
+        </label> 
+
+        <p class="buttons">
+            <input class="Button" id="submitButton" type="submit" value="Login" />
+            <input class="Button" id="clearButton" type="reset" value="Clear" />
+        </p>
+        <!-- <button type="submit"  name="submit" class="button1">Submit</button> -->
+    </form>
+
+    <div id="output"></div>
+
+    
+</body>
+</html>

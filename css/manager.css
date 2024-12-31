@@ -1,0 +1,136 @@
+
+body{
+	background: #e3e1e1;
+    /* display: flex; */
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #a9b388;
+    padding: 20px;
+    margin-bottom: 10%;
+    /* top: 0;
+	position: sticky; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h1 {
+    color: rgb(150, 188, 26);
+}
+
+.logo img{
+    height: 140px;
+	
+}
+
+.nav-links {
+	font-size: 27px;
+	
+    list-style: none;
+	line-height: 50px;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* form */
+
+form{
+    /* width: 70%; */
+    width: 70%;
+	/* min-height: 800px; */
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	/* background: #f5f5b6; */
+	background: #a9b388;
+	border-radius: 20px;
+	padding: 28px 100px;
+    
+}
+
+form > label {
+	width: 250px;
+	margin: 15px 0;
+	padding: 30px;
+}
+
+form > label > input {
+	width: inherit;
+	border: 0;
+	border-bottom: 2px solid #5f6f52;
+	outline: 0;
+	padding: 7px 10px;
+	background: transparent;
+}
+
+form > label > input:hover {
+    border-bottom-width: 3px;
+}
+
+
+.buttons{
+    width: 70%;
+	min-height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: center;
+    width: 250px;
+}
+
+#clearButton, #submitButton{
+    width: 200px;
+	height: 36px;
+	border-radius: 20px;
+	background-color: transparent;
+	border: solid 1px #3f92b3;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+ 
+#clearButton:hover, #submitButton:hover {
+	background-color: #b7b7a4;
+	transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+	form, .service {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+	}
+	form > label , form > label {
+		width: 100%;
+	}
+	
+	form > label > input {
+		width: 100%;
+		margin: 0;
+	}
+
+}

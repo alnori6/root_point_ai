@@ -1,0 +1,30 @@
+{
+  "name": "theproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "dev": "nodemon openai.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "chart": "^0.1.2",
+    "chart.js": "^4.4.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.2.0",
+    "exxpress": "^1.0.0",
+    "hbs": "^4.2.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.9.2",
+    "node-notifier": "^10.0.1",
+    "nodemon": "^3.1.0",
+    "openai": "^4.67.0"
+  },
+  "keywords": [],
+  "description": ""
+}
